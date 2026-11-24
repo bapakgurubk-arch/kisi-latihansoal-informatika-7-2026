@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Latihan Soal Informatika Kelas 7</title>
+<style>
+:root{--bg:#eef2f8;--card:#fff;--tx:#17202f;--mu:#5d6b82;--pri:#12407f;--pri2:#1f6fd1;--acc:#0e9f8e;--bd:#d8e0ee;--ok:#e2f5e9;--okb:#23924a;--no:#fdeaea;--nob:#d23f3f;--sel:#e8f1ff;--sh:0 2px 10px rgba(18,64,127,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f141d;--card:#18202d;--tx:#e8edf6;--mu:#9ba8bf;--pri:#7fb0ff;--pri2:#4d8fe8;--acc:#37c9b6;--bd:#2b3649;--ok:#14301f;--no:#371b1b;--sel:#1b2c47;--sh:none}}
+:root[data-theme="dark"]{--bg:#0f141d;--card:#18202d;--tx:#e8edf6;--mu:#9ba8bf;--pri:#7fb0ff;--pri2:#4d8fe8;--acc:#37c9b6;--bd:#2b3649;--ok:#14301f;--no:#371b1b;--sel:#1b2c47;--sh:none}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:14px}
+.hero{background:linear-gradient(135deg,#0d2f63,#1f6fd1 70%,#0e9f8e);color:#fff;border-radius:18px;padding:24px 20px;box-shadow:0 8px 24px rgba(13,47,99,.28)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;font-weight:600}
+.hero h1{margin:6px 0 4px;font-size:1.75rem;line-height:1.25}
+.sub{margin:0;opacity:.92;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
+.chips span{background:rgba(255,255,255,.17);border:1px solid rgba(255,255,255,.28);padding:4px 12px;border-radius:99px;font-size:.82rem}
+.guru{font-size:.88rem;border-top:1px solid rgba(255,255,255,.28);padding-top:10px;margin-top:4px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin:14px 0;box-shadow:var(--sh)}
+h2{font-size:1.12rem;margin:0 0 12px;color:var(--pri);display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:5px;height:1.1em;border-radius:3px;background:var(--acc)}
+.id{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+label.f{display:block;font-size:.8rem;font-weight:600;color:var(--mu);margin-bottom:3px}
+input[type=text],input[type=number],textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+:focus-visible{outline:3px solid var(--pri2);outline-offset:2px}
+.err{color:var(--nob);font-size:.9rem;margin:10px 0 0;font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--bg);border-radius:10px;padding:10px 12px 10px 42px;position:relative;font-size:.88rem}
+.steps li::before{content:counter(s);position:absolute;left:10px;top:9px;width:24px;height:24px;border-radius:50%;background:var(--pri2);color:#fff;font-weight:700;font-size:.8rem;display:grid;place-items:center}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;gap:6px;padding:6px;margin:14px 0;background:var(--card);border:1px solid var(--bd);border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.1)}
+button{font:inherit;cursor:pointer}
+.tab{flex:1;border:0;background:transparent;color:var(--mu);padding:10px 6px;border-radius:10px;font-weight:600;font-size:.92rem;display:flex;flex-direction:column;align-items:center;line-height:1.25}
+.tab span{font-size:1.2rem}
+.tab.on{background:var(--pri2);color:#fff;box-shadow:0 3px 10px rgba(31,111,209,.4)}
+.panel{display:none}.panel.active{display:block;animation:fi .25s ease}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border:1px solid var(--bd);padding:9px 11px;text-align:left;vertical-align:top}
+thead th{background:var(--pri);color:#fff}:root[data-theme="dark"] thead th{color:#0f141d}
+tbody tr:nth-child(even) td{background:var(--bg)}
+.c{text-align:center!important;white-space:nowrap}
+tfoot th{background:var(--sel);color:var(--tx)}
+.mat p{margin:6px 0}.mat ul{margin:4px 0 6px 18px;padding:0}.mat li{margin:4px 0}
+.pem{display:flex;gap:14px;align-items:center;background:linear-gradient(135deg,#e6f0ff,#e8f8f4);border-radius:12px;padding:14px;margin:2px 0 12px;color:#17202f}
+.pem .pic{font-size:2.3rem;line-height:1.1;letter-spacing:3px;flex:none;text-align:center;max-width:120px}
+.pem small{display:block;color:#3d5a80;font-weight:700;text-transform:uppercase;font-size:.7rem;letter-spacing:.08em}
+.ing{background:var(--bg);border-left:4px solid #e0a100;padding:9px 12px;margin-top:10px;border-radius:6px;font-size:.92rem}
+.prog{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);z-index:5}
+.bar{height:9px;border-radius:9px;background:var(--bd);overflow:hidden;margin:6px 0 10px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pri2),var(--acc));transition:width .3s}
+.qnav{display:flex;flex-wrap:wrap;gap:5px}
+.qnav a{width:30px;height:30px;border-radius:8px;border:1px solid var(--bd);display:grid;place-items:center;font-size:.78rem;font-weight:600;color:var(--mu);text-decoration:none;background:var(--card)}
+.qnav a.ans{background:var(--pri2);border-color:var(--pri2);color:#fff}
+.qnav a.ok{background:var(--okb);border-color:var(--okb);color:#fff}.qnav a.no{background:var(--nob);border-color:var(--nob);color:#fff}
+.q{padding:16px 0;border-top:1px solid var(--bd)}.q:first-child{border-top:0;padding-top:4px}
+.qh{display:flex;gap:10px;margin-bottom:8px}
+.no{flex:none;width:30px;height:30px;border-radius:9px;background:var(--pri);color:#fff;font-weight:700;font-size:.85rem;display:grid;place-items:center}:root[data-theme="dark"] .no{color:#0f141d}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1.5px solid var(--bd);border-radius:10px;margin:6px 0;cursor:pointer;background:var(--card)}
+.opt:hover{border-color:var(--pri2)}
+.opt input{margin-top:6px;accent-color:var(--pri2)}
+.opt b{flex:none;width:22px;color:var(--pri)}
+.opt.sel{background:var(--sel);border-color:var(--pri2)}
+.opt.ok{background:var(--ok);border-color:var(--okb)}.opt.bad{background:var(--no);border-color:var(--nob)}
+.bahas{display:none;margin-top:10px;padding:10px 12px;border-left:4px solid var(--acc);background:var(--bg);font-size:.92rem;border-radius:6px;white-space:pre-line}
+.done .bahas{display:block}
+textarea{min-height:92px;resize:vertical}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.btn{padding:12px 22px;border:0;border-radius:10px;font-weight:700;background:var(--pri2);color:#fff;box-shadow:0 3px 10px rgba(31,111,209,.3)}
+.btn.sec{background:transparent;color:var(--pri2);border:1.5px solid var(--pri2);box-shadow:none}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.res{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.ring{--p:0;width:130px;height:130px;border-radius:50%;background:conic-gradient(var(--acc) calc(var(--p)*1%),var(--bd) 0);display:grid;place-items:center;flex:none}
+.ring div{width:98px;height:98px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-size:2rem;font-weight:800;color:var(--pri)}
+.mrow{display:grid;grid-template-columns:150px 1fr 46px;gap:8px;align-items:center;font-size:.85rem;margin:6px 0}
+@media (max-width:600px){.id{grid-template-columns:1fr}.hero h1{font-size:1.4rem}.mrow{grid-template-columns:110px 1fr 40px}.tab{font-size:.8rem}}
+footer{text-align:center;color:var(--mu);font-size:.85rem;padding:8px 0 28px}
+.pr{display:none}
+@media print{
+ body{background:#fff;color:#000;font-size:12px}
+ .noprint,nav.tabs,.btns,.prog{display:none!important}
+ .panel{display:block!important}
+ .hero{background:#fff;color:#000;box-shadow:none;border:1.5px solid #000}.chips span{border-color:#666;background:none}
+ .card{box-shadow:none;border-color:#999}
+ .q{break-inside:avoid}.pem{break-inside:avoid;background:#f1f1f1}
+ .done .bahas{display:block}
+ .opt.ok{border-color:#000;font-weight:600}
+ input[type=text],input[type=number],textarea{border:0;border-bottom:1px solid #777;border-radius:0;background:#fff;color:#000}
+ .pr{display:block}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+ <div class="eyebrow">Dinas Pendidikan Kabupaten Ponorogo</div>
+ <h1>Latihan Soal Informatika</h1>
+ <p class="sub">Persiapan Penilaian Sumatif Akhir Semester Ganjil • Kelas 7 SMP • Tahun Ajaran 2026–2027</p>
+ <div class="chips"><span>Mata Pelajaran: Informatika</span><span>Penilaian: 7 Desember 2026</span><span>40 Pilihan Ganda • 10 Isian</span></div>
+ <div class="guru">Guru Pengampu : Fuad Nur Yahya, S.Pd, NIP. 19950718 202221 1 008</div>
+</header>
+
+<section class="card" id="ident">
+ <h2>Identitas Siswa</h2>
+ <div class="id">
+  <div><label class="f" for="nama">Nama</label><input type="text" id="nama" autocomplete="name" placeholder="Nama lengkap"></div>
+  <div><label class="f" for="kelas">Kelas</label><input type="text" id="kelas" placeholder="Contoh: 7A"></div>
+  <div><label class="f" for="absen">No. Absen</label><input type="number" id="absen" min="1" max="60" placeholder="Nomor"></div>
+ </div>
+ <div class="err" id="err" role="alert" hidden>Lengkapi nama, kelas, dan nomor absen terlebih dahulu.</div>
+</section>
+
+<section class="card noprint">
+ <h2>Petunjuk Belajar</h2>
+ <ol class="steps"><li>Isi identitas</li><li>Pahami kisi-kisi</li><li>Baca materi</li><li>Kerjakan latihan soal</li><li>Tekan Lihat Hasil, baca pembahasan</li><li>Cetak atau simpan PDF</li></ol>
+</section>
+
+<nav class="tabs" aria-label="Navigasi bagian">
+ <button class="tab on" data-t="p-kisi"><span>📋</span>Kisi-kisi</button>
+ <button class="tab" data-t="p-materi"><span>📚</span>Materi</button>
+ <button class="tab" data-t="p-soal"><span>✏️</span>Latihan Soal</button>
+</nav>
+
+<main>
+<div class="panel active" id="p-kisi"><section class="card"><h2>Kisi-kisi (Gambaran Besar)</h2><div class="scroll" id="kisi"></div></section></div>
+<div class="panel" id="p-materi"><div id="materi"></div></div>
+<div class="panel" id="p-soal">
+ <section class="card prog"><div style="display:flex;justify-content:space-between;font-size:.88rem;font-weight:600"><span>Kemajuan pilihan ganda</span><span id="pt">0 dari 40 terjawab</span></div><div class="bar"><i id="pb"></i></div><div class="qnav" id="qnav"></div></section>
+ <section class="card"><h2>A. Pilihan Ganda (40 soal)</h2><div id="pg"></div></section>
+ <section class="card"><h2>B. Isian / Uraian (10 soal)</h2><p style="color:var(--mu);font-size:.9rem;margin-top:0">Jawablah dengan jelas dan runtut. Bagian ini tidak dinilai otomatis; bandingkan jawabanmu dengan pedoman setelah menekan Lihat Hasil.</p><div id="ur"></div></section>
+ <div class="btns"><button class="btn" id="kirim">Lihat Hasil</button><button class="btn sec" id="cetak">Cetak / Simpan PDF</button><button class="btn sec" id="ulang">Ulangi</button></div>
+ <section class="card" id="hasil" aria-live="polite" hidden><h2>Hasil Pilihan Ganda</h2><div class="res"><div class="ring" id="ring"><div id="skor">0</div></div><div><div id="rinci"></div></div></div><h2 style="margin-top:18px">Penguasaan per Materi</h2><div id="mat"></div><p class="noprint" style="color:var(--mu);font-size:.88rem">Gulir ke atas untuk membaca pembahasan setiap soal dan pedoman jawaban isian.</p></section>
+</div>
+</main>
+<footer>Guru Pengampu : Fuad Nur Yahya, S.Pd, NIP. 19950718 202221 1 008</footer>
+</div>
+<script>
+const $=id=>document.getElementById(id),L='ABCD';
+let PG=[
+["Panitia lomba 17 Agustus di sekolah mencatat banyak pekerjaan: menyiapkan hadiah, menyusun jadwal lomba, membuat spanduk, dan mengatur konsumsi. Agar pekerjaan tidak menumpuk pada satu orang, ketua panitia memecah masalah besar menjadi bagian kecil. Tindakan yang tepat adalah …",["membagi tugas ke seksi acara, perlengkapan, publikasi, dan konsumsi","meminta semua panitia mengerjakan semua tugas bersamaan","memilih warna spanduk sebelum tahu kebutuhan lomba","menghapus sebagian tugas agar rapat cepat selesai"],0,"Memecah masalah besar menjadi bagian kecil yang dikerjakan kelompok berbeda adalah dekomposisi."],
+["Jumlah pengunjung koperasi sekolah dalam satu pekan: Senin 10, Selasa 15, Rabu 10, Kamis 15, Jumat 10. Kesimpulan pola yang paling sesuai adalah …",["selalu bertambah lima setiap hari","selalu berkurang lima setiap hari","bergantian antara 10 dan 15","sama pada semua hari"],2,"Angka 10 dan 15 muncul berselang-seling. Mengenali keteraturan seperti ini disebut pengenalan pola."],
+["Sekolah membuat aplikasi pendaftaran ekskul. Data yang tersedia: nama siswa, kelas, pilihan ekskul, nomor kontak, warna kesukaan, dan merek tas. Informasi yang dipertahankan melalui abstraksi adalah …",["warna kesukaan dan merek tas","nama, kelas, pilihan ekskul, dan nomor kontak","merek tas dan nama akun permainan","warna kesukaan dan jenis musik"],1,"Abstraksi mengambil data yang diperlukan untuk pendaftaran dan membuang data yang tidak berpengaruh."],
+["Urutan algoritma mencuci tangan yang paling logis adalah …",["mengeringkan, menyabuni, membilas, membasahi, menggosok","membasahi tangan, menyabuni, menggosok, membilas, mengeringkan","menyabuni, mengeringkan, membasahi, menggosok, membilas","menggosok, membasahi, mengeringkan, menyabuni, membilas"],1,"Algoritma harus runtut: basahi, sabun, gosok, bilas, lalu keringkan."],
+["Petugas UKS ingin mencatat peminjaman tensimeter. Sarana yang ada hanya satu laptop dan aplikasi spreadsheet, serta tidak ada anggaran membeli aplikasi baru. Solusi awal yang paling sesuai adalah …",["membeli sistem pemindai otomatis","membuat tabel peminjaman di spreadsheet dengan kolom nama, tanggal, dan alat","mencatat secara lisan saja","menulis di kertas berbeda tanpa format sama"],1,"Solusi harus sesuai batasan: memakai sarana yang sudah ada dan tanpa biaya tambahan."],
+["Simbol flowchart untuk menandai awal dan akhir proses adalah …",["persegi panjang","belah ketupat","jajar genjang","oval (terminator)"],3,"Terminator berbentuk oval atau persegi panjang membulat dipakai untuk Mulai dan Selesai."],
+["Pada flowchart pembelian tiket: jika saldo cukup, tiket dicetak; jika tidak, tampil pesan saldo kurang. Simbol yang tepat untuk memeriksa saldo adalah …",["oval","persegi panjang","belah ketupat","jajar genjang"],2,"Pemeriksaan kondisi dengan dua cabang (Ya/Tidak) memakai simbol keputusan, yaitu belah ketupat."],
+["Flowchart menguji kondisi nilai ≥ 75. Cabang Ya menampilkan “Lulus”, cabang Tidak menampilkan “Remedial”. Jika nilai yang dimasukkan tepat 75, pesan yang tampil adalah …",["Remedial, karena nilai harus lebih dari 75","Lulus, karena 75 memenuhi kondisi ≥ 75","Remedial, karena 75 bilangan ganjil","tidak ada pesan"],1,"Tanda ≥ berarti lebih besar atau sama dengan, sehingga 75 memenuhi syarat dan mengikuti cabang Ya."],
+["Fungsi garis panah pada flowchart adalah …",["menentukan warna diagram","menunjukkan arah dan urutan aliran proses","menggantikan semua simbol","menuliskan nama pembuat diagram"],1,"Panah menghubungkan simbol dan menunjukkan langkah berikutnya."],
+["Awalnya kotak_kelereng berisi 0. Perintah “tambah 3 kelereng” diulang sebanyak 5 kali. Isi kotak_kelereng setelah selesai adalah …",["3","8","12","15"],3,"3 × 5 = 15. Perulangan menjalankan perintah yang sama berkali-kali."],
+["Pseudocode: UNTUK nomor ← 1 SAMPAI 9, TAMPILKAN nomor. Program ingin menampilkan 1 sampai 10, tetapi hanya sampai 9. Perbaikan yang tepat adalah …",["mengubah nilai awal menjadi 0","mengubah batas akhir menjadi 10","memindahkan TAMPILKAN ke luar perulangan","menghapus variabel nomor"],1,"Batas akhir perulangan harus 10 agar nomor 10 ikut ditampilkan."],
+["Pseudocode untuk menghitung luas persegi panjang yang benar adalah …",["TAMPILKAN luas; luas ← p × l; BACA p, l","BACA p, l; luas ← p × l; TAMPILKAN luas","luas ← p × l; BACA p, l; TAMPILKAN luas","BACA p, l; TAMPILKAN luas; luas ← p × l"],1,"Urutan benar: masukan dibaca, diproses (dihitung), lalu hasil ditampilkan."],
+["Perangkat yang berfungsi sebagai alat masukan untuk memindai dokumen kertas menjadi berkas digital adalah …",["printer","speaker","scanner","proyektor"],2,"Scanner memasukkan data (gambar dokumen) ke komputer, sehingga termasuk perangkat masukan."],
+["Komponen yang bertugas utama memproses instruksi program pada komputer adalah …",["RAM","CPU","SSD","monitor"],1,"CPU mengolah instruksi dan mengendalikan operasi komputer."],
+["Komputer menjadi lambat saat banyak aplikasi dibuka bersamaan, padahal ruang penyimpanan masih lega dan layar normal. Komponen yang paling relevan diperiksa adalah …",["printer","RAM","speaker","mouse"],1,"RAM menampung data aplikasi yang sedang berjalan; kapasitas kecil membuat banyak aplikasi aktif terasa lambat."],
+["Contoh brainware dalam kegiatan laboratorium komputer adalah …",["teknisi yang merawat dan mengelola komputer","keyboard","sistem operasi","aplikasi pengolah angka"],0,"Brainware adalah manusia yang mengoperasikan atau mengelola sistem komputer."],
+["Pernyataan yang benar tentang RAM dan SSD adalah …",["RAM menyimpan berkas permanen, SSD menyimpan data sementara","RAM menyimpan data sementara, SSD menyimpan berkas jangka panjang","RAM mencetak, SSD memasukkan karakter","RAM dan SSD sama-sama menampilkan gambar"],1,"Data di RAM hilang saat komputer mati, sedangkan berkas di SSD tetap tersimpan."],
+["Perangkat: (1) webcam, (2) headphone, (3) joystick, (4) plotter. Pengelompokan berdasarkan arah data yang tepat adalah …",["webcam dan headphone masukan; joystick dan plotter keluaran","webcam dan joystick masukan; headphone dan plotter keluaran","semuanya perangkat masukan","headphone dan joystick masukan; webcam dan plotter keluaran"],1,"Webcam dan joystick mengirim data ke komputer (masukan); headphone dan plotter menerima hasil dari komputer (keluaran)."],
+["Laporan memiliki 8 bab dan banyak subbab. Agar daftar isi dapat dibuat dan diperbarui otomatis, langkah yang paling efektif adalah …",["memberi spasi banyak sebelum setiap judul","menerapkan Heading secara berjenjang lalu menyisipkan daftar isi otomatis","mengubah semua judul menjadi gambar","memasukkan semua judul ke satu kotak teks"],1,"Styles/Heading berjenjang dikenali Word sebagai dasar pembuatan daftar isi otomatis."],
+["Surat resmi masih mungkin direvisi guru, tetapi salinan final harus tampil sama di perangkat berbeda. Format yang sesuai adalah …",["JPG untuk revisi, MP3 untuk final","PDF untuk revisi, TXT untuk final","DOCX untuk revisi, PDF untuk final","XLSX untuk revisi, PPTX untuk final"],2,"DOCX dapat diedit, sedangkan PDF menjaga tampilan tetap konsisten."],
+["Kelompok mempresentasikan proyek hemat listrik. Urutan isi presentasi yang paling logis adalah …",["rekomendasi, hasil, tindakan, kondisi awal, judul","judul dan tujuan, kondisi awal, penyebab, tindakan, hasil, rekomendasi","hasil, judul, rekomendasi, tindakan, kondisi awal","tindakan, rekomendasi, judul, penyebab, hasil"],1,"Alur bertahap membangun pemahaman sebelum audiens menerima rekomendasi."],
+["Siswa ingin membandingkan jumlah sampah dari lima kelas agar perbedaan terlihat cepat. Visual yang paling sesuai adalah …",["paragraf panjang berisi angka","foto tempat sampah tanpa keterangan","diagram batang dengan kategori kelas dan jumlah sampah","ikon sampah tanpa skala"],2,"Diagram batang cocok untuk membandingkan nilai antarkategori."],
+["Slide berisi paragraf panjang berhuruf kecil dengan teks abu-abu muda di latar putih sehingga sulit dibaca dari belakang kelas. Perbaikan yang tepat adalah …",["menambah paragraf agar lengkap","meringkas isi, memperbesar teks, dan meningkatkan kontras warna","memakai banyak jenis font","menambah animasi di setiap kalimat"],1,"Slide yang baik ringkas, terbaca jelas, dan berkontras kuat."],
+["Data nilai ada di sel B2 sampai B6. Rumus yang tepat untuk menghitung jumlah seluruh nilai adalah …",["=AVERAGE(B2:B6)","=MAX(B2:B6)","=SUM(B2:B6)","=MIN(B2:B6)"],2,"SUM menjumlahkan, AVERAGE merata-rata, MAX mencari terbesar, MIN mencari terkecil."],
+["Petugas kebersihan mencatat bahwa setiap Senin sampah plastik paling banyak dan setiap Rabu paling sedikit, dan hal ini berulang tiap pekan. Kegiatan tersebut menerapkan …",["dekomposisi","pengenalan pola","abstraksi","algoritma"],1,"Menemukan keteraturan yang berulang pada data adalah pengenalan pola."],
+["Peta jalur evakuasi hanya menampilkan pintu, tangga, dan titik kumpul tanpa menggambar isi setiap ruangan. Cara berpikir yang diterapkan adalah …",["dekomposisi","pengenalan pola","abstraksi","debugging"],2,"Abstraksi mengambil informasi penting dan mengabaikan detail yang tidak diperlukan."],
+["Simbol jajar genjang pada flowchart digunakan untuk …",["menandai awal proses","memeriksa suatu kondisi","menyatakan input atau output data","menghubungkan dua simbol"],2,"Jajar genjang dipakai untuk masukan (input) dan keluaran (output) data."],
+["Pseudocode: JIKA suhu > 37 MAKA TAMPILKAN “Demam”, SELAIN ITU TAMPILKAN “Normal”. Jika suhu yang dimasukkan 37, hasil yang tampil adalah …",["Demam","Normal","Demam dan Normal","tidak ada yang tampil"],1,"37 tidak lebih besar dari 37, sehingga kondisi salah dan cabang SELAIN ITU dijalankan."],
+["Perangkat yang dapat berfungsi sebagai masukan sekaligus keluaran adalah …",["keyboard","speaker","layar sentuh","printer"],2,"Layar sentuh menerima sentuhan (masukan) dan menampilkan gambar (keluaran)."],
+["Windows, Android, dan Linux termasuk …",["perangkat masukan","sistem operasi","brainware","perangkat keluaran"],1,"Ketiganya adalah sistem operasi, yaitu perangkat lunak yang mengatur kerja perangkat keras."],
+["Flashdisk dan SSD termasuk perangkat …",["masukan","penyimpanan","keluaran","pemroses"],1,"Keduanya menyimpan berkas dalam jangka panjang."],
+["Fitur untuk mengatur teks menjadi rata kiri, tengah, atau kanan adalah …",["pemformatan paragraf (alignment)","word count","mail merge","watermark"],0,"Perataan teks diatur melalui pemformatan paragraf."],
+["Agar nomor halaman muncul berurutan otomatis, siswa sebaiknya menggunakan …",["mengetik nomor satu per satu","Page Number pada Header atau Footer","Font Color","Find and Replace"],1,"Page Number menyesuaikan nomor secara otomatis jika jumlah halaman berubah."],
+["Kata “SMP” akan diganti menjadi “SMPN” di seluruh dokumen dengan cepat. Fitur yang tepat adalah …",["Spelling","Word Count","Find and Replace","Comment"],2,"Find and Replace mencari dan mengganti kata di seluruh dokumen sekaligus."],
+["Untuk menyalin tampilan format huruf dari satu teks ke teks lain, fitur yang digunakan adalah …",["Zoom","Comment","Watermark","Format Painter"],3,"Format Painter menyalin format tanpa menyalin isi teks."],
+["Prinsip isi satu slide yang baik adalah …",["satu gagasan utama dengan poin ringkas","seluruh materi dalam satu slide","paragraf panjang berhuruf kecil","banyak font berbeda"],0,"Slide ringkas dengan satu gagasan utama lebih mudah dipahami audiens."],
+["Penggunaan animasi dan transisi pada presentasi sebaiknya …",["diberikan pada setiap kata","dibuat sebanyak mungkin","secukupnya agar tidak mengganggu isi","menggantikan penjelasan lisan"],2,"Animasi hanya pendukung; terlalu banyak justru mengalihkan perhatian."],
+["Rumus untuk mencari nilai terkecil pada sel C2 sampai C8 adalah …",["=MAX(C2:C8)","=MIN(C2:C8)","=SUM(C2:C8)","=AVERAGE(C2:C8)"],1,"MIN mengembalikan nilai terkecil dalam rentang."],
+["Setiap rumus pada spreadsheet diawali dengan tanda …",["#","@","=","$"],2,"Tanda sama dengan (=) memberi tahu spreadsheet bahwa isi sel adalah rumus."],
+["Penjualan empat hari: 20, 25, 15, dan 30 kotak. Hasil rata-ratanya adalah …",["20","22,5","25","90"],1,"Total 90 dibagi 4 hari = 22,5."]
+];
+const UR=[
+["Kelas akan mengadakan program “Pekan Hijau” selama lima hari dengan empat kelompok piket. Tugas sering terlambat dan alat tanam kadang tidak tersedia. Jelaskan penerapan dekomposisi, pengenalan pola, abstraksi, dan algoritma beserta contoh hasil tiap tahap.","Dekomposisi: pecah menjadi tugas menanam, menyiram, merawat, dan menyiapkan alat. Pola: tugas yang berulang tiap hari (menyiram pagi, mengecek alat) dibuatkan jadwal tetap. Abstraksi: hanya catat nama tugas, penanggung jawab, hari, dan alat; abaikan data tidak relevan. Algoritma: langkah berurutan, misalnya cek daftar alat, bagi tugas, laksanakan, lalu laporkan."],
+["Petugas kelas membuat prosedur cek tugas. Siswa memasukkan nama dan status. Jika “sudah”, tampil “Tercatat”; jika “belum”, tampil “Segera kumpulkan”. Setelah itu selesai. Tuliskan urutan flowchart dalam teks dan sebutkan simbolnya.","Mulai (oval) → Input nama dan status (jajar genjang) → Apakah status “sudah”? (belah ketupat) → Ya: Tampilkan “Tercatat” (jajar genjang) / Tidak: Tampilkan “Segera kumpulkan” (jajar genjang) → Selesai (oval)."],
+["Buat pseudocode yang menerima tiga nilai ulangan, menghitung rata-rata, dan menampilkan “Baik” jika rata-rata minimal 70, selain itu “Perlu belajar lagi”.","BACA n1, n2, n3\nrata ← (n1 + n2 + n3) / 3\nJIKA rata ≥ 70 MAKA TAMPILKAN “Baik”\nSELAIN ITU TAMPILKAN “Perlu belajar lagi”\nSELESAI"],
+["Di laboratorium, siswa memakai mouse, monitor, CPU, dan scanner. Komputer menjalankan Windows dan aplikasi presentasi, dibantu laboran. Kelompokkan menjadi hardware, software, dan brainware, lalu jelaskan fungsi satu contoh tiap kelompok.","Hardware: mouse, monitor, CPU, scanner (mouse memasukkan perintah penunjuk). Software: Windows dan aplikasi presentasi (Windows mengatur kerja perangkat). Brainware: siswa dan laboran (laboran mengelola perangkat dan akun)."],
+["Nilai lima siswa ada di sel B2 sampai B6. Tuliskan rumus untuk jumlah, rata-rata, nilai terkecil, dan nilai terbesar. Jika data penjualan 20, 25, 10, dan 30, hitung total dan rata-ratanya.","=SUM(B2:B6), =AVERAGE(B2:B6), =MIN(B2:B6), =MAX(B2:B6). Untuk 20, 25, 10, 30: total 85, rata-rata 21,25, minimum 10, maksimum 30. Informasi ini dipakai merencanakan persediaan, misalnya menyiapkan stok mendekati nilai tertinggi pada hari ramai."],
+["Komputer laboratorium menjadi lambat ketika banyak aplikasi dibuka, padahal penyimpanan masih lega. Tentukan komponen yang diperiksa, fungsinya, dan hubungan dengan gejala.","RAM. Fungsinya menyimpan data dan aplikasi yang sedang berjalan sementara. Banyak aplikasi aktif membuat RAM penuh sehingga komputer melambat, sedangkan penyimpanan (SSD) tidak berkaitan langsung."],
+["Laporan kegiatan lima halaman harus memiliki judul, subjudul, nomor halaman, tabel peserta, salinan final yang mudah dibuka, dan berkas yang masih bisa direvisi. Jelaskan langkah dan fitur yang digunakan.","Ketik isi laporan di Word, terapkan Styles/Heading untuk judul dan subjudul, sisipkan Page Number di Footer, buat tabel lewat Insert Table, periksa ejaan dan baca ulang. Simpan sebagai DOCX untuk revisi dan ekspor ke PDF sebagai salinan final."],
+["Kelompok mempresentasikan hasil proyek hemat air selama lima menit. Rancang minimal lima slide beserta isi pokok tiap slide.","Slide 1 judul dan tujuan; slide 2 kondisi awal; slide 3 penyebab pemborosan; slide 4 tindakan dan hasil (diagram batang); slide 5 kesimpulan dan saran. Setiap slide singkat dan berkontras jelas."],
+["Jelaskan perbedaan RAM dan SSD beserta contoh peristiwa yang menunjukkan perbedaannya.","RAM menyimpan data sementara untuk aplikasi yang sedang berjalan dan hilang saat komputer mati. SSD menyimpan berkas jangka panjang. Contoh: dokumen yang belum disimpan hilang saat listrik padam, sedangkan dokumen yang sudah disimpan di SSD tetap ada."],
+["Sebutkan tiga prinsip desain slide yang baik dan contoh penerapannya.","1) Ringkas: satu gagasan utama per slide. 2) Kontras: teks gelap di latar terang agar terbaca dari belakang kelas. 3) Konsisten: jenis dan ukuran huruf sama pada seluruh slide."]
+];
+const M=[
+{t:'Berpikir Komputasional',p:'🧩🔍🧠📝',q:'Bagaimana menyiapkan bazar sekolah tanpa kewalahan dan tanpa ada tugas yang terlewat?',i:'Berpikir komputasional adalah cara menyelesaikan masalah secara terstruktur sehingga solusinya dapat dijalankan manusia maupun komputer. Ada empat elemen utama:',l:['<b>Dekomposisi</b>: memecah masalah besar menjadi bagian kecil. Contoh: bazar dibagi menjadi seksi acara, logistik, publikasi, dan keuangan.','<b>Pengenalan pola</b>: menemukan keteraturan atau kejadian berulang. Contoh: data 10, 15, 10, 15 membentuk pola bergantian.','<b>Abstraksi</b>: mengambil informasi penting dan mengabaikan detail yang tidak diperlukan. Contoh: data pesanan kantin cukup menu, jumlah, harga, dan waktu ambil; warna kesukaan tidak perlu.','<b>Algoritma</b>: langkah penyelesaian yang runtut, jelas, dan berhingga. Contoh: cek jadwal, pilih buku, masukkan ke tas, letakkan tas di dekat pintu.'],n:'Ingat: pilih solusi yang sesuai sarana dan batasan yang tersedia (komputer, petugas, anggaran).'},
+{t:'Flowchart dan Pseudocode',p:'🔷▶️⬜🔶',q:'Bagaimana menggambarkan langkah memilih jalur ke sekolah agar orang lain bisa mengikutinya tanpa bertanya?',i:'Flowchart adalah diagram alur yang memakai simbol standar. Pseudocode adalah tulisan langkah program yang mirip bahasa sehari-hari.',l:['<b>Terminator</b> (oval): Mulai dan Selesai. <b>Proses</b> (persegi panjang): perhitungan atau tindakan. <b>Input/Output</b> (jajar genjang): memasukkan atau menampilkan data. <b>Keputusan</b> (belah ketupat): memeriksa kondisi Ya/Tidak. <b>Panah</b>: arah dan urutan alur.','Flowchart memiliki satu titik Mulai, satu atau lebih Selesai, dan setiap simbol harus terhubung oleh panah.','Pseudocode dasar: <i>BACA</i> (input), <i>hitung</i> (proses), <i>TAMPILKAN</i> (output), <i>JIKA ... MAKA ... SELAIN ITU</i> (percabangan), <i>UNTUK ... SAMPAI</i> (perulangan).','Contoh perulangan: tambah 3 diulang 5 kali menghasilkan 3 × 5 = 15.','Tanda ≥ berarti lebih besar atau sama dengan, jadi nilai 75 memenuhi kondisi nilai ≥ 75.'],n:'Kesalahan umum: batas akhir perulangan kurang satu (1 sampai 9 padahal butuh 1 sampai 10) dan urutan input-proses-output terbalik.'},
+{t:'Sistem Komputer',p:'⌨️🖥️💾👩‍💻',q:'Saat kamu mengetik lalu huruf muncul di layar dan dokumen tersimpan, komponen apa saja yang bekerja?',i:'Sistem komputer terdiri atas hardware, software, dan brainware yang bekerja dengan alur masukan, proses, keluaran, dan penyimpanan.',l:['<b>Masukan</b>: keyboard, mouse, mikrofon, kamera, scanner, joystick. <b>Keluaran</b>: monitor, speaker, printer, proyektor, plotter. Layar sentuh dapat menjadi keduanya.','<b>CPU</b> memproses instruksi dan mengendalikan operasi. <b>RAM</b> menyimpan data sementara yang sedang dipakai dan hilang saat komputer mati. <b>SSD/HDD/flashdisk</b> menyimpan berkas jangka panjang.','<b>Hardware</b>: perangkat keras. <b>Software</b>: sistem operasi dan aplikasi. <b>Brainware</b>: manusia pengguna atau pengelola, misalnya operator dan teknisi.','Pemeriksaan awal masalah: komputer lambat saat banyak aplikasi aktif, periksa RAM. Suara ada tetapi layar gelap, periksa kabel dan sumber input monitor.'],n:'Cara membedakan: lihat arah data. Menuju komputer adalah masukan, keluar dari komputer adalah keluaran.'},
+{t:'Aplikasi Pengolah Kata',p:'📝📑🔖',q:'Mengapa laporan 25 halaman sulit dirapikan jika judul diformat satu per satu?',i:'Pengolah kata seperti Microsoft Word menyediakan fitur agar dokumen rapi, konsisten, dan mudah diperbarui.',l:['<b>Format karakter dan paragraf</b>: ukuran, ketebalan, jenis huruf, perataan, dan spasi baris.','<b>Styles/Heading</b>: format judul berjenjang yang menjadi dasar <b>daftar isi otomatis</b>.','<b>Header/Footer</b>: nama kelompok di atas dan <b>Page Number</b> di bawah, otomatis berurutan.','<b>Tabel</b> untuk data berbaris dan berkolom; <b>Section Break</b> untuk mengatur orientasi satu halaman saja.','<b>Find and Replace</b> mengganti kata di seluruh dokumen; <b>Format Painter</b> menyalin format; <b>pemeriksa ejaan</b> tetap perlu diikuti baca ulang.','Format berkas: <b>DOCX</b> untuk dokumen yang masih diedit, <b>PDF</b> untuk salinan final dengan tampilan tetap.'],n:'Ingat: terapkan Heading sejak awal agar daftar isi dapat dibuat dan diperbarui dengan mudah.'},
+{t:'Aplikasi Presentasi',p:'📊🎤🖼️',q:'Pernahkah kamu sulit membaca slide dari kursi paling belakang? Apa penyebabnya?',i:'Presentasi yang baik membantu audiens memahami pesan secara bertahap, bukan sekadar memindahkan teks ke layar.',l:['<b>Urutan isi</b>: judul dan tujuan, kondisi awal, penyebab, tindakan, hasil, lalu rekomendasi.','<b>Prinsip desain</b>: satu gagasan per slide, teks ringkas dan besar, kontras kuat, font konsisten, animasi secukupnya.','<b>Pilihan visual</b>: diagram batang untuk membandingkan kategori, diagram lingkaran untuk bagian dari keseluruhan, diagram garis untuk perubahan, diagram alir untuk tahapan.','<b>Perilaku penyaji</b>: menghadap audiens, menjelaskan poin inti secara lisan, dan berpindah slide dengan terencana.','Warna tidak boleh menjadi satu-satunya pembeda; tambahkan label atau pola.'],n:'Slide adalah penunjuk gagasan, bukan naskah yang dibaca keras-keras.'},
+{t:'Aplikasi Spreadsheet',p:'📈🧮🔢',q:'Bagaimana menghitung total dan rata-rata nilai 40 siswa tanpa kalkulator?',i:'Spreadsheet menyusun data dalam sel (kolom dan baris) dan dapat menghitung otomatis dengan rumus.',l:['Alamat sel ditulis kolom lalu baris, misalnya B2. Rentang sel ditulis B2:B6.','Setiap rumus diawali tanda <b>=</b>.','<b>=SUM(B2:B6)</b> jumlah, <b>=AVERAGE(B2:B6)</b> rata-rata, <b>=MIN(B2:B6)</b> nilai terkecil, <b>=MAX(B2:B6)</b> nilai terbesar.','Contoh data 20, 25, 15, 30: jumlah 90, rata-rata 22,5, minimum 15, maksimum 30.','Informasi tersebut dipakai untuk mengambil keputusan, misalnya merencanakan persediaan sesuai penjualan tertinggi dan terendah.'],n:'Periksa rentang sel agar tidak ada data yang terlewat atau ikut terhitung secara keliru.'}
+];
+const K=[['Berpikir komputasional','Menerapkan dekomposisi, pola, abstraksi, dan algoritma pada masalah sehari-hari',7,1],['Flowchart dan pseudocode','Mengenali simbol, alur keputusan, perulangan, dan urutan instruksi',9,2],['Sistem komputer','Membedakan perangkat masukan, keluaran, CPU, RAM, penyimpanan, dan brainware',9,3],['Aplikasi pengolah kata','Memilih fitur format, heading, daftar isi, header-footer, dan format berkas',6,1],['Aplikasi presentasi','Menyusun alur isi, memilih visual, dan menerapkan prinsip desain slide',5,2],['Aplikasi spreadsheet','Menggunakan rumus dasar jumlah, rata-rata, terkecil, dan terbesar',4,1]];
+
+const T=[0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,4,4,4,5,0,0,1,1,2,2,2,3,3,3,3,4,4,5,5,5];
+
+const ct=[0,0,0,0];
+PG=PG.map((d,i)=>[...d,T[i]]).sort((a,b)=>a[4]-b[4]).map((d,i)=>{let p=i%4;for(let k=1;k<4;k++){const q=(i+k)%4;if(ct[q]<ct[p])p=q}ct[p]++;const s=(d[2]-p+4)%4;return[d[0],d[1].map((_,k)=>d[1][(k+s)%4]),p,d[3],d[4]]});
+$('materi').innerHTML=M.map(m=>`<section class="card mat"><h2>${m.t}</h2><div class="pem"><div class="pic">${m.p}</div><div><small>Gambar pemantik</small>${m.q}</div></div><p>${m.i}</p><ul>${m.l.map(x=>'<li>'+x+'</li>').join('')}</ul><div class="ing">${m.n}</div></section>`).join('');
+$('kisi').innerHTML='<table><thead><tr><th>Materi</th><th>Tujuan yang Diukur</th><th class="c">Pilihan Ganda</th><th class="c">Isian/Uraian</th></tr></thead><tbody>'+K.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class="c">${r[2]}</td><td class="c">${r[3]}</td></tr>`).join('')+'</tbody><tfoot><tr><th colspan="2">Jumlah</th><th class="c">'+PG.length+'</th><th class="c">'+UR.length+'</th></tr></tfoot></table>';
+$('pg').innerHTML=PG.map((d,i)=>`<div class="q" id="q${i}"><div class="qh"><span class="no">${i+1}</span><div>${d[0]}</div></div>${d[1].map((t,j)=>`<label class="opt" data-j="${j}"><input type="radio" name="q${i}" value="${j}"><b>${L[j]}.</b><span>${t}</span></label>`).join('')}<div class="bahas"><b>Kunci: ${L[d[2]]}.</b> ${d[3]}</div></div>`).join('');
+$('ur').innerHTML=UR.map((d,i)=>`<div class="q"><div class="qh"><span class="no">${i+1}</span><div>${d[0]}</div></div><textarea aria-label="Jawaban isian ${i+1}" placeholder="Tulis jawabanmu di sini"></textarea><div class="bahas"><b>Pedoman jawaban:</b> ${d[1]}</div></div>`).join('');
+$('qnav').innerHTML=PG.map((_,i)=>`<a href="#q${i}" id="n${i}">${i+1}</a>`).join('');
+let locked=false;
+function upd(){let n=0;PG.forEach((_,i)=>{const c=!!document.querySelector(`input[name=q${i}]:checked`);if(c)n++;$('n'+i).classList.toggle('ans',c&&!locked);document.querySelectorAll(`#q${i} .opt`).forEach(l=>l.classList.toggle('sel',l.querySelector('input').checked&&!locked))});$('pt').textContent=n+' dari '+PG.length+' terjawab';$('pb').style.width=(n/PG.length*100)+'%'}
+$('pg').addEventListener('change',upd);
+const tabs=document.querySelectorAll('.tab');
+function show(id){tabs.forEach(x=>x.classList.toggle('on',x.dataset.t===id));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id))}
+tabs.forEach(b=>b.onclick=()=>{show(b.dataset.t);$('ident').nextElementSibling.nextElementSibling.scrollIntoView()});
+$('kirim').onclick=()=>{
+ const miss=['nama','kelas','absen'].filter(k=>!$(k).value.trim());
+ if(miss.length){$('err').hidden=false;$('ident').scrollIntoView();$(miss[0]).focus();return}
+ $('err').hidden=true;locked=true;
+ let ok=0,kos=0;const st=K.map(()=>[0,0]);
+ PG.forEach((d,i)=>{
+  const c=document.querySelector(`input[name=q${i}]:checked`),a=$('n'+i);
+  document.querySelectorAll(`#q${i} .opt`).forEach(l=>{const j=+l.dataset.j;l.querySelector('input').disabled=true;l.classList.remove('sel');if(j===d[2])l.classList.add('ok');else if(c&&+c.value===j)l.classList.add('bad')});
+  st[d[4]][1]++;a.classList.remove('ans');
+  if(!c){kos++;} else if(+c.value===d[2]){ok++;st[d[4]][0]++;a.classList.add('ok')} else a.classList.add('no');
+ });
+ document.querySelectorAll('.q').forEach(q=>q.classList.add('done'));
+ const n=Math.round(ok/PG.length*100),pr=n>=85?'Sangat baik':n>=70?'Baik':n>=56?'Cukup':'Perlu bimbingan lanjutan';
+ $('skor').textContent=n;$('ring').style.setProperty('--p',n);
+ $('rinci').innerHTML='<p style="margin:0"><b id="rn"></b><br><span id="rk"></span><br>Benar <b>'+ok+'</b> dari '+PG.length+' soal'+(kos?' ('+kos+' belum dijawab)':'')+'<br>Predikat: <b>'+pr+'</b></p>';
+ $('rn').textContent=$('nama').value.trim();$('rk').textContent='Kelas '+$('kelas').value.trim()+' • No. absen '+$('absen').value.trim();
+ $('mat').innerHTML=K.map((r,i)=>{const p=Math.round(st[i][0]/st[i][1]*100);return`<div class="mrow"><span>${r[0]}</span><div class="bar" style="margin:0"><i style="width:${p}%"></i></div><b>${p}%</b></div>`}).join('');
+ $('hasil').hidden=false;$('kirim').disabled=true;$('hasil').scrollIntoView();
+};
+$('cetak').onclick=()=>window.print();
+$('ulang').onclick=()=>{
+ locked=false;
+ document.querySelectorAll('input[type=radio]').forEach(r=>{r.checked=false;r.disabled=false});
+ document.querySelectorAll('.opt').forEach(l=>l.classList.remove('ok','bad','sel'));
+ document.querySelectorAll('.q').forEach(q=>q.classList.remove('done'));
+ PG.forEach((_,i)=>$('n'+i).classList.remove('ok','no','ans'));
+ document.querySelectorAll('textarea').forEach(t=>t.value='');
+ $('hasil').hidden=true;$('kirim').disabled=false;upd();window.scrollTo(0,0);
+};
+upd();
+</script>
+</body>
+</html>
